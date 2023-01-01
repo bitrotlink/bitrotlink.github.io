@@ -1,0 +1,29 @@
+#+TITLE: Bitrot
+#+OPTIONS: toc:nil
+#+OPTIONS: timestamp:nil
+#+OPTIONS: num:nil
+#+OPTIONS: html-postamble:nil
+
+* Software
+
+** [[./curveboard][Curveboard]]
+Ergonomic curved keyboard frame designed in OpenSCAD
+
+** [[./curveboard_firmware][Curveboard firmware]]
+USB keyboard controller firmware with mod-key-independent character remapping
+
+** [[./worthwhilizer][Worthwhilizer]]
+Trio of Elisp packages essential to make Emacs a worthwhile text editor
+
+** [[./greenhouse][Greenhouse]]
+Environmental sensor logging system
+
+* Public email
+
+** [[./public_mail/Alex-Stamos.html][Alex Stamos]], former CISO of Yahoo
+Yahoo's Kafkaesque demand that users magically cause public data to become confidential, and then use that data as passwords
+
+** [[./public_mail/Tom-Woods.html][Tom Woods]], Austrian-school economist
+- The Austrian school missed the revolution made possible by the Information Age
+- Fiat cryptocurrencies, such as Bitcoin, missed the grounding in physical commodities
+- Mankind missed the opportunity to fuse those two
