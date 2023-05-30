@@ -1,136 +1,374 @@
-<html>
-  <head><title>Hexal</title>
-      <style>
-table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
-  padding: 10px;
-}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Hexal</title>
+    <style>
+      table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 10px;
+      }
 
-@font-face {
-  font-family: "HexalFallback";
-  src: url("HexalFallback.woff2") format('woff2');
-}
-      </style>
-</head>
+      table.numbernames td:nth-of-type(3n) {border-left: 4px solid black;}
+      table.numbernames th:nth-of-type(2n) {border-left: 4px solid black;}
+
+      @font-face {
+      font-family: "HexalFallback";
+      src: url("HexalFallback.woff2") format('woff2');
+      }
+    </style>
+  </head>
 
   <body style="font-family: sans,HexalFallback;">
 
     <h1>Hexal numerals and metric system</h1>
 
-        <h4><i>World Metrology Day</i> — ໣໭'๥๴</h4>
-  <h2>Hexal numerals</h2>
-<p></p>
-<p>The <i>hexal</i> numeral system is base ๡๠, i.e. base 60. It's also known as <i>εξηκονταδικές (hexikontadikes)</i> and <i>sexagesimal</i>.</p>
+    <h4><i>World Metrology Day</i> — ໣໭'๥๴</h4>
 
-<p>The hexal digits are:<br>
-๠ ๡ ๢ ๣ ๤ ๥ ๦ ๧ ๨ ๩ ๪ ๫ ๬ ๭ ๮ ๯ ๰ ๱ ๲ ๳ ๴ ๵ ๶ ๷ ๸ ๹ ๺ ๻ ๼ ๽ ໠ ໡ ໢ ໣ ໤ ໥ ໦ ໧ ໨ ໩ ໪ ໫ ໬ ໭ ໮ ໯ ໰ ໱ ໲ ໳ ໴ ໵ ໶ ໷ ໸ ໹ ໺ ໻ ໼ ໽<br>
-with values 0 through 59, respectively.<br>
-The glyphs ๰, ๵, ๶, and ໫ have serifs on the left to distinguish from the plus sign and the letters Y, X, and T.</p>
+    <h2>Hexal numerals</h2>
+    <p>The <i>hexal</i> numeral system is base ๡๠, i.e. base 60. It's also known as <i>εξηκονταδικές (hexikontadikes)</i> and <i>sexagesimal</i>. It's not to be confused with hexadecimal, which is base 16. Because the latter is commonly abbreviated as <i>hex</i>, hexal never is.</p>
 
-    <p>Analogous to 100 being pronounced “hundred” instead of “tenty” (the next decade after ninety) due to 100 being an integer power of the base in decimal, and likewise 1000 normally being pronounced “thousand” instead of “ten hundred”, so also hexal has names for the integer powers of the base. It also has names analogous to 0.1 being pronounced “one tenth”, 0.01 “one hundredth” or “one percent”, and so on for parts per thousand and per million.<p>
-<p>The names are as follows:</p>
-<table>
-<tr><td>๡๠</td><td>one hesh</td><td>๠.๡</td><td>one perhesh</td></tr>
-<tr><td>๡๠๠</td><td>one dihesh (“di” rhymes with “tee”)</td><td>๠.๠๡</td><td>one per dihesh</td></tr>
-<tr><td>๡๠๠๠</td><td>one trihesh (“tri” is pronounced as “try”)</td><td>๠.๠๠๡</td><td>one per trihesh</td></tr>
-<tr><td>๡๠ ๠๠๠</td><td>one tetresh</td><td>๠.๠๠๠ ๡</td><td>one per tetresh</td></tr>
-<tr><td>๡๠๠ ๠๠๠</td><td>one pentesh</td><td>๠.๠๠๠ ๠๡</td><td>one per pentesh</td></tr>
-</table>
-<p>and so on for hexesh, heptesh, octesh, ennesh, decesh, hendecesh, dodecesh, tridecesh, tetradecesh, pendecesh, hexadecesh, heptadecesh, octodecesh, enneadecesh, icosesh.<br>
-      The reason for “tri” being pronounced “try” instead of “tree” is to clearly distinguish it from “three”.
-    </p>
+    <p>The hexal digits are:</p>
+    <p>๠ ๡ ๢ ๣ ๤ ๥ ๦ ๧ ๨ ๩ ๪ ๫ ๬ ๭ ๮ ๯ ๰ ๱ ๲ ๳ ๴ ๵ ๶ ๷ ๸ ๹ ๺ ๻ ๼ ๽ ໠ ໡ ໢ ໣ ໤ ໥ ໦ ໧ ໨ ໩ ໪ ໫ ໬ ໭ ໮ ໯ ໰ ໱ ໲ ໳ ໴ ໵ ໶ ໷ ໸ ໹ ໺ ໻ ໼ ໽</p>
+    <p>with values 0 through 59, respectively. Owing to their modern uses, these glyphs are called <i>STEM</i> hexal digits, the acronym for science, technology, engineering, and math, when necessary to distinguish from the ancient Sumerians' cuneiform and from traditional western <i>decimal coded hexal</i> notation using pairs of decimal digits, most commonly for minutes and seconds of time and geographic coordinates.</p>
 
-<h4>Hexal positive exponent characters</h4>
-  ໿ ࿸ ࿹ ࿺ ࿻ ࿼ ࿽ ࿾ ࿿<br>
-  When suffixed to a numeral, they mean, respectively, ×๡๠<sup>๡</sup> through ×๡๠<sup>๩</sup>.
-Exponents ๪ and greater don't have dedicated characters; instead, they're expressed using pairs of characters: the positive exponent marker <b>໾</b> and a digit. The pairs ໾๪ through ໾໽ mean ×๡๠<sup>๪</sup> through ×๡๠<sup>໽</sup>, respectively.
+    <p>They have several features:
+      <ul>
+	<li>Take the same space as decimal<sup>†</sup> digits</li>
+	<li>Are usable on standard 14-segment displays and 5×7 pixel displays</li>
+	<li>Are visually distinct from ASCII characters, including digits, letters, and punctuation</li>
+	<li>Are legible at the same font sizes that ASCII characters are</li>
+	<li>Visually represent the decimal sub-base</li>
+	<li>Visually represent the encoding on a 3-deck 5-1-4 abacus (with 6-2-5 positions)</li>
+      </ul>
+    <p>† <span style="font-size:smaller;">The Hindu-Arabic digits that are used most commonly for decimal, but also for binary, ternary, senary, octal, dozenal, hexadecimal, and sometimes other radixes</span></p>
 
-  <h4>Hexal negative exponent characters</h4>
-  ๿ ࿰ ࿱ ࿲ ࿳ ࿴ ࿵ ࿶ ࿷<br>
-    When suffixed to a numeral, they mean, respectively, ×๡๠<sup>-๡</sup> through ×๡๠<sup>-๩</sup>. Exponents -๪ and lower are expressed using the negative exponent marker <b>๾</b>. The pairs ๾๪ through ๾໽ mean ×๡๠<sup>-๪</sup> through ×๡๠<sup>-໽</sup>, respectively.</p>
+    <h4>Design of the glyphs</h4>
+    <p>Each glyph is composed of a lower semidigit with a value in the range 0..9, and an upper semidigit with a value in the range 0..5.<br>
+      For the lower semidigits:</p>
+    <p><svg style="height: 1em;" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="-309 0 372 98">
+	<path fill="currentColor"
+	      d="M-276 100c-11 0 -23 -10 -23 -21s18 -22 18 -22h9s19 11 19 22s-12 21 -23 21zM-276 91c8 0 13 -4 13 -12s-9 -13 -13 -13s-14 5 -14 13s6 12 14 12zM-204 57h9v41h-9v-41zM-128 57h9s19 22 19 33v8h-9v-8c0 -6 -10 -24 -14 -24s-14 18 -14 24v8h-9v-8
+		 c0 -11 18 -33 18 -33zM-31 66h7v17c0 10 -14 17 -23 17s-23 -7 -23 -17v-17h8v17c0 3 8 8 11 8v-25h8v25c3 0 12 -5 12 -8v-17zM53 77h-19v13h19v8h-8h-11h-9h-18v-8h18v-21h28v8z" />
+      </svg> with values 0..4 are obvious enough<br>
+      <svg style="height: 1em;" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="-309 0 372 98">
+	<path fill="currentColor"
+	      d="M-266 86c0 -4 -8 -11 -10 -11s-10 7 -10 11s4 5 10 5s10 -1 10 -5zM-299 66v-9h46v9h-19c0 6 15 11 15 22c0 6 -8 12 -19 12s-20 -6 -20 -12c0 -11 15 -16 15 -22h-18zM-223 66v-9h46v9h-18v32h-9v-32h-19zM-146 66v-9h46v9h-19c0 2 19 20 19 32h-9c0 -9 -12 -23 -14 -23
+		 s-14 14 -14 23h-9c0 -12 18 -30 18 -32h-18zM-70 66v-9h46v9v17c0 10 -14 17 -23 17s-23 -7 -23 -17v-17zM-51 66h-11v17c0 3 8 8 11 8v-25zM-43 66v25c3 0 12 -5 12 -8v-17h-12zM7 66v-9h46v9h-19v24h19v8h-19h-9h-18v-8h18v-24h-18z" />
+      </svg> with values 5..9 are produced by adding 5, indicated by a horizontal middle bar</p>
+    <p>For the upper semidigits:
+    <p><svg style="height: 1em;" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="-156 0 219 98">
+	<path fill="currentColor"
+	      d="M-128 57c0 0 -18 -10 -18 -21c0 -6 12 -12 23 -12s23 6 23 12c0 11 -19 21 -19 21h-9zM-110 38c0 -4 -7 -5 -13 -5s-13 1 -13 5c0 6 9 11 13 11s13 -5 13 -11zM-51 26h9v31h-9v-31zM25 57c0 0 -18 -14 -18 -25v-6h9v6c0 6 10 17 14 17s14 -11 14 -17v-6h9v6
+		 c0 11 -19 25 -19 25h-9z" />
+      </svg> with values 0..2 are also obvious<br>
+      <svg style="height: 1em;" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="-80 0 143 98">
+	<path fill="currentColor"
+	      d="M-42 56v1h-9v-1c0 -8 17 -13 17 -17c0 -5 -8 -5 -17 -5h-19v-8h19c24 0 27 7 27 13c0 8 -18 13 -18 17zM34 56v1h-9v-1c0 -4 -18 -12 -18 -12v-10v-8h9h37v8h-37v6s18 8 18 16z" />
+      </svg> with values 3 and 5 resemble the top parts of decimal digits 3 and 5<br>
+      <svg style="height: 1em;" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="-10 0 73 98">
+	<path fill="currentColor"
+	      d="M34 34v23h-9v-23h-18v-8h18h9h19v8h-19z" />
+      </svg> with value 4 is visually halfway between 3 and 5</p>
+    <p>The lower semidigits represent <i>ones</i>, and the upper represent <i>tens</i>; combined, they enable representation of values 0..59.</p>
+    <p>Hexal ๠ effectively follows that pattern, but the upper and lower zeroes are both reshaped so that their combination is a decimal 0 with a reverse slash. This both avoids the misleading resemblance to decimal 8 that would otherwise result, and distinguishes ๠ from decimal 0, regardless of which common typeface variant is used for the latter (empty loop, center dot, or forward slash).
+    <p>The glyphs ๰, ๵, ๶, and ໫ have serifs on the left to distinguish them from the plus sign and the letters Y, X, and T.</p>
 
-    <p>Analogous to “10%” being pronounced “ten percent”, the same value in hexal is “๦๿” and is pronounced “six perhesh”.</p>
+    <h4>Pronunciation</h4>
+    <p>Hexal digits are pronounced in English “zero” through “fifty nine”. Exponents ๢ and ๣ are pronounced “squared” and “cubed”, the same as 2 and 3 are.</p>
 
-    <p>In decimal, 1000  = 1e3; both can be pronounced “one thousand”, or depending on preference or emphasis, the latter can instead be pronounced “one times ten raised three”. Likewise in hexal, ๡๠๠๠ = ๡࿹, and can be pronounced “one trihesh”, or the latter can be pronounced “one times hesh raised three”.</p>
-<p></p>
-  <h2>The Hexmet system</h2>
-  <p>The Hexal metric system of units, <i>Hexmet</i>, is the system of units in which, exactly,
-  <ul>
-<li>the unperturbed ground state hyperfine transition frequency of the cesium-133 atom, ∆ν<sub>Cs</sub>, is 9 192 631 770 Hz</li>
-<li>the speed of light in vacuum, c, is <b>๡๠๠ ๠๠๠ ᴘ</b>/s</li>
-<li>the Planck constant, h, is 6.626 070 15 e-34 J·s</li>
-<li>the elementary charge, e, is 1.602 176 634 e-19 C</li>
-<li>the Boltzmann constant, k, is <b>273.16</b> × 1.380 649 e-23 J/<b>ᴛ</b></li>
-<li>the Avogadro constant, N<sub>A</sub>, is 6.022 140 76 <b>e26/(299 792 458/๡๠ ๠๠๠)² 1/mel</b></li>
-<li>the luminous efficacy of monochromatic radiation of frequency 540 e12 Hz, K<sub>cd</sub>, is 683 lm/W</li>
-</ul>
-  where the hertz, joule, coulomb, lumen, and watt, with unit symbols Hz, J, C, lm, and W, respectively, are related to the units second, <b>pon</b>, <b>stone</b>, ampere, <b>thermab</b>, <b>mel</b>, and candela, with unit symbols s, <b>ᴘ</b>, <b>st</b>, A, <b>ᴛ</b>, <b>mel</b>, and cd, respectively, according to the following unit definitions:</p>
-<p>Hz = 1/s<br>
-  J = <b>st·ᴘ²</b>/s²<br>
-  C = A·s<br>
-  lm = cd·sr<br>
-  W = <b>st·ᴘ²</b>/s³</p>
+    <p>Analogous to 100 being pronounced “hundred” instead of “tenty” (the next decade after ninety) due to 100 being an integer power of the base in decimal, and likewise 1000 normally being pronounced “thousand” instead of “ten hundred”, so also hexal has names for integer powers of the base, including “hesh” instead of “sixty”. It also has names analogous to 0.1 being pronounced “one tenth”, 0.01 “one hundredth” or “one percent”, and so on for parts per thousand and per million.</p>
+    <p>The names are as follows:</p>
 
-  <p>That text is adapted from the SI brochure, and Hexmet's differences from SI are in <b>bold</b>. The numerical values of the constants are expressed using a mix of decimal and hexal numerals to make clear the relationship between Hexmet and SI.</p>
+    <table class="numbernames">
+      <tr><th colspan="2">Positive powers</th><th colspan="2">Negative powers</th></tr>
+      <tr><td>๡๠</td><td>one hesh</td><td>๠.๡</td><td>one perhesh</td></tr>
+      <tr><td>๡๠๠</td><td>one dihesh<sup>†</sup></td><td>๠.๠๡</td><td>one per dihesh<sup>†</sup></td></tr>
+      <tr><td>๡ ๠๠๠</td><td>one trihesh<sup>‡</sup></td><td>๠.๠๠๡</td><td>one per trihesh<sup>‡</sup></td></tr>
+      <tr><td>๡๠ ๠๠๠</td><td>one tetresh</td><td>๠.๠๠๠ ๡</td><td>one per tetresh</td></tr>
+      <tr><td>๡๠๠ ๠๠๠</td><td>one pentesh</td><td>๠.๠๠๠ ๠๡</td><td>one per pentesh</td></tr>
+    </table>
+    <p>† <span style="font-size:smaller;"><b>“di”</b> rhymes with <b>“tee”</b></span><br>
+      ‡ <span style="font-size:smaller;"><b>“tri”</b> is pronounced <b>“try”</b>, not “tree”, to clearly distinguish it from “three”</span></p>
 
-  <h3>Hexmet and SI</h3>
+    <p>And so on for hexesh, heptesh, octesh, ennesh, decesh, hendecesh, dodecesh, tridecesh, tetradecesh, pendecesh, hexadecesh, heptadecesh, octodecesh, enneadecesh, icosesh.</p>
+
+    <h4>Distinguishing hexal and decimal</h4>
+    <p>Hexal digits ๡..๩ being distinct from decimal 1..9 makes the radix of multi-digit numerals unambiguous, without having to explicitly write it. This contrasts with hexadecimal, customarily using 1..9 and A..F, since multi-digit hexadecimal numerals that happen to have no digits A..F can be misinterpreted as decimal (the default radix for decimal digits) unless the radix is written.</p>
+
+    <p>The choice of a hexal or decimal digit to represent integers from -๩ through ๩ (-9 through 9) is just a matter of preference or convenience, since they're single-digit numerals in either case, so the radix is irrelevant. This also applies to exponents; for example, ๡๠<sup>๢</sup> = ๡๠<sup>2</sup> = ๡๠๠.</p>
+
+    <p>Hexal digit ๠ being distinct from decimal 0 isn't necessary to prevent ambiguity, because the non-zero hexal digits of a numeral would indicate the radix. Leading zeroes and trailing (after the radix point) zeroes don't change a numeral's value, and if there are no non-zero digits to indicate the radix, then the numeral consists entirely of zeroes, in which case the value is zero, regardless of radix. However, a distinct zero still has several benefits:</p>
+    <ul>
+      <li>When interpreting significant digits, it makes unambiguous that ๠.๠ and ๠.๠๠, etc, indicate zero to precision of one perhesh and one per dihesh, instead of one tenth and one hundredth.</li>
+      <li>For time-varying displays currently displaying zero, it makes unambiguous the radix for future numerals.</li>
+      <li>It makes the radix prominent even for long numerals consisting almost entirely of zeroes.</li>
+      <li>It helps catch radix-altering typos, such as when a user editing a hexal numeral that has only one non-zero digit accidentally replaces that digit with a decimal digit.</li>
+    </ul>
+
+    <p>Verbally, when there's more than one digit left of the radix point in a hexal numeral, at least one word in the range from “hesh” to “icosesh” always occurs, so there's no ambiguity about the radix. And when the unit digit is the only digit, the radix is irrelevant. But when the unit digit is the only one left of the radix point, and there's at least one digit to the right, then it would be verbally ambiguous if “point” were used to express the radix point; e.g. “point one” could be 0.1 (one tenth) or ๠.๡ (one perhesh). Therefore, the word “point” is not used for hexal numerals in English. Instead, the word “dot” is used, since it's not used for decimal numerals. But the radix point is still called the “radix point”.</p>
+
+    <h4>Distinguishing zero digits and semidigits</h4>
+    <p>When a digit to right of the radix point is ๴, ໠, ໪, or ໴, and the digit that follows it is less than ten, the latter must be prefixed with “oh” when verbalized. For example, ๡.๴๣ must be pronounced “one dot twenty oh three”, not “one dot twenty three”, because the latter is ๡.๷. (In other cases, the “oh” prefix can optionally be omitted, because no ambiguity would result.) An easy way to remember this is that “oh” means the upper semidigit (which has value zero) of the digits one through nine.</p>
+    <p>This corresponds to the standard way of verbalizing time; e.g. five minutes after ten o'clock, ๪:๥ or 10:05, is “ten oh five”. The minute expression in 10:05 is decimal coded hexal; the time isn't pronounced “ten five”, even though in this case no ambiguity would result.</p>
+    <p>For hexal numerals, the digit zero must be pronounced “nil”, not “oh”. For example, ๡.๴๠๣ must be pronounced “one dot twenty nil three” or “one dot twenty nil oh three”, not “one dot twenty oh three”, because the latter is ๡.๴๣. To prevent confusion with “oh”, the word “zero” is unused when verbalizing hexal numerals, other than the complete numeral ๠ itself being pronounced “zero”.</p>
+
+    <h4>Positive exscalars</h4>
+    <p>໿ ࿸ ࿹ ࿺ ࿻ ࿼ ࿽ ࿾ ࿿<br>
+      The <i>exscale</i> consists of integer powers of hesh used as multipliers, each of which is an <i>exscalar</i>. When suffixed to a numeral, the characters above mean, respectively, ×๡๠<sup>๡</sup> through ×๡๠<sup>๩</sup>. Exscalars ×๡๠<sup>๪</sup> and greater don't have dedicated characters; instead, they're expressed using pairs of characters: the positive exscale marker <b>໾</b> and a digit. The pairs ໾๪ through ໾໽ mean ×๡๠<sup>๪</sup> through ×๡๠<sup>໽</sup>, respectively. This compact form of scientific notation is analogous to the <i>e-scale</i> commonly used with decimal numerals, expressed as the suffixed characters E<i>n</i>.</p>
+
+    <p>In decimal, 1 × 10<sup>4</sup> = 10 000 = 1E4. Those can be pronounced “one times ten raised four”, “ten thousand”, and “one E four”. Likewise in hexal, ๡ × ๡๠<sup>๤</sup> = ๡๠ ๠๠๠ = ๡࿺. The first is “one times hesh raised four”, both of the latter two are “one tetresh”, and the latter one can also be pronounced “one ex four”.</p>
+
+    <p>Exscalars are not used alone as numerals; they're only multipliers applied to hexal numerals or to units of measurement.</p>
+
+    <h4>Negative exscalars</h4>
+    <p>๿ ࿰ ࿱ ࿲ ࿳ ࿴ ࿵ ࿶ ࿷<br>
+      When suffixed to a numeral, they mean, respectively, ×๡๠<sup>-๡</sup> through ×๡๠<sup>-๩</sup>. Exscalars ×๡๠<sup>-๪</sup> and lower are expressed using the negative exscale marker <b>๾</b> and a digit. The pairs ๾๪ through ๾໽ mean ×๡๠<sup>-๪</sup> through ×๡๠<sup>-໽</sup>, respectively.</p>
+
+    <p>Analogous to <i>10%</i> being pronounced “ten percent”, the same value in hexal is ๦๿ and is pronounced “six perhesh”. The latter can also be pronounced “six ex negative one”.</p>
+
+    <p>When a numeral contains more than three digits, the last being an exscalar, the latter is separately spaced.<br>
+      For example, ๡ ๢๣๤ ๠๠๠ is written as ๡ ๢๣๤ ࿹, not as ๡๢ ๣๤࿹. In scientific notation, it's ๡.๢๣๤ ࿼.<br>
+      Likewise, ๡๢.๣๤๥ is written as ๡๢ ๣๤๥ ࿱, not as ๡๢๣ ๤๥࿱. In scientific notation, it's ๡.๢๣๤ ๥ ๿.</p>
+
+    <h2>The Hexmet system</h2>
+    <p>The hexal metric system of units, <i>Hexmet</i>, is the system of units in which, exactly,
+      <ul>
+	<li>the unperturbed ground state hyperfine transition frequency of the cesium-133 atom, <i>∆ν<sub>Cs</sub></i>, is 9 192 631 770 Hz</li>
+	<li>the speed of light in vacuum, <i>c</i>, is <b>๡࿻ ᴘ</b>/s</li>
+	<li>the Planck constant, <i>h</i>, is 6.626 070 15 × 10<sup>-34</sup> J·s</li>
+	<li>the elementary charge, <i>e</i>, is 1.602 176 634 × 10<sup>-19</sup> C</li>
+	<li>the Boltzmann constant, <i>k</i>, is <b>273.16</b> × 1.380 649 × 10<sup>-23</sup> J/<b>ᴛ</b></li>
+	<li>the Avogadro constant, <i>N<sub>A</sub></i>, is 6.022 140 76 × 10<b><sup>26</sup> × (๡࿺/299 792 458)² 1/mel</b></li>
+	<li>the luminous efficacy of monochromatic radiation of frequency 540 × 10<sup>12</sup> Hz, <i>K<sub>cd</sub></i>, is 683 lm/W</li>
+      </ul>
+    <p>where the hertz, joule, coulomb, lumen, and watt, with unit symbols Hz, J, C, lm, and W, respectively, are related to the units second, <b>pon</b>, <b>stone</b>, ampere, <b>thermab</b>, <b>mel</b>, and candela, with unit symbols s, <b>ᴘ</b>, <b>st</b>, A, <b>ᴛ</b>, <b>mel</b>, and cd, respectively, according to the following unit definitions:</p>
+    <p>Hz = 1/s<br>
+      J = <b>st·ᴘ²</b>/s²<br>
+      C = A·s<br>
+      lm = cd·sr<br>
+      W = <b>st·ᴘ²</b>/s³</p>
+
+    <p>That text is adapted from the SI brochure, and Hexmet's differences from SI are in <b>bold</b>. The numerical values of the constants are expressed using a mix of decimal and hexal numerals to make clear the relationship between Hexmet and SI. Of course, the constants don't change, but their numerical values depend on the units used to express them.</p>
+
+    <h3>Hexmet and SI</h3>
     <p>The second, ampere, and candela are identical in both systems.</p>
-    <h4>Length and mass</h4>
-    <p>“Pon” rhymes with “zone”. The name is derived from πυγών, but simplified because native English speakers are unable to pronounce the original. This is an ancient Greek unit of length, from an adult's elbow to fist.</p>
-    <p>The <i>stone</i> is so named because it's close to a historical unit of the same name.
-<p><b>st·ᴘ² = kg·m²</b> exactly, due to the identical numerical value of the Planck constant in the unit <b>st·ᴘ²/s</b> and the unit <b>kg·m²/s</b>. Due to this, the joule, watt, volt, ohm, farad, henry, and weber are also identical in Hexmet and SI.</p>
-<p>The decimal values of the Hexmet length and mass units in terms of SI units are approximately:<br>
-1 ᴘ ≈ 0.38554 m<br>
-1 st ≈ 6.72777 kg</p>
+    <h4>Length</h4>
+    <p>The <i>pon</i> (rhymes with “bone”) is the unit of length. The name is derived from πυγών, but simplified because native English speakers are unable to pronounce the original. This is the distance from an adult's elbow to fist (i.e. base knuckles), coincidentally standardized by the ancient Greeks (despite knowing nothing about light speed) to a value matching ࿳<i>c</i>·s to an accuracy better than one part per thousand; hence the name given to Hexmet's unit.</p>
+    <p>“Pon” is both singular and plural, as “bison” and “salmon” are. The plural does not have an “s” suffix.</p>
 
-<h4>Amount of substance</h4>
-    <p><b>d/mel = g/mol</b> exactly, where d = st/๡๠๠ and g = kg/1000.</p>
-    <p>Hexmet's mel differs from SI's mole simply to compensate for the two systems' different mass units.</p>
+    <p>1 ᴘ = (299 792 458/๡࿻) m = ๠.๷๧໹ ໪໼ m ≈ 0.385 54 m<br>
+      The hexal value in radix form is exact, but the decimal value doesn't terminate, because the divisor's factors include 3, not only 2 and 5.</p>
+
+    <p>However, for the reciprocal,<br>
+      1 m ≈ ๢.໥໧໩ ໥๽ ᴘ ≈ 2.593 79 ᴘ<br>
+      Neither the hexal nor the decimal value terminates, because the divisor's (299 792 458) factors include primes greater than 5. Specifically, they're 2, 7, 73, and 293 339; this is a historical accident of SI (unrelated to Hexmet), unfortunate since engineering routinely requires inverting the light speed constant. Because of that accident, engineers commonly round it to 3E8, which still isn't metric. In contrast, Hexmet's numerical value for <i>c</i> is exactly ๡࿻, i.e. ๡๠๠ ๠๠๠, so it doesn't require rounding, and it is metric.</p>
+
+    <h4>Mass</h4>
+    <p>The <i>stone</i> is the unit of mass. <b>st·ᴘ² = kg·m²</b> exactly, due to the identical numerical value of the Planck constant in the unit <b>st·ᴘ²/s</b> and the unit <b>kg·m²/s</b>. Due to this, the joule, watt, volt, ohm, siemens, farad, henry, and weber are also identical in Hexmet and SI. The unit of mass that satisfies that equation happens to be within the range of historical values of the stone; hence the name given to Hexmet's unit.</p>
+
+    <p>1 kg = ๠.๨໹๥ ໮๯໬ ๦๲๰ ๤ st ≈ 0.148 64 st<br>
+      The hexal value in radix form is exact, but the decimal value doesn't terminate, again because the divisor's factors include 3.</p>
+
+    <p>However, for the reciprocal,<br>
+      1 st = kg·m²/ᴘ² ≈ ๦.໭໩໼ ๫໤ kg ≈ 6.727 77 kg<br>
+      Neither the hexal nor the decimal value terminates, again due to SI's light speed numerical value.</p>
 
     <h4>Temperature</h4>
-    <p>The “ab” in “thermab” sounds like the first syllable of “absolute”.
+    <p>The <i>thermab</i> is the unit of temperature. The “ab” in the name is pronounced as the first syllable of “absolute”.
     <p><b>1 ᴛ = 273.16 K</b> exactly. Both are absolute temperature scales, with zero being absolute zero; however, where SI defines the kelvin such that water's triple point temperature is 273.16 K (within the current limits of measurement), Hexmet defines the thermab such that water's triple point temperature is ๡ ᴛ, i.e. 1 ᴛ.</p>
-      <p>This definition, combined with hexal as the numerical base, makes the thermab scale convenient for anthropocentric temperatures, eliminating the need for a separate convenience scale, as Celsius is needed for Kelvin.</p>
-      <p>Water's freezing temperature at atmospheric pressure is practically ๡ ᴛ, room temperature is ๡.๥ ᴛ, human body temperature is ๡.๨ ᴛ, and water's boiling temperature is ๡.๶ ᴛ. Two fractional figures, e.g. ๡.๥๠, give finer precision than decidegrees Celsius, which is finer than necessary for everyday use, and exceeds the precision of common digital temperature sensors</p>
-    <p>For temperatures greater than or equal to ๠.໠ ᴛ (i.e. 0.5 ᴛ), which is far below Earth's lowest recorded surface temperature, and less than ๡.໠ ᴛ (i.e. 1.5  ᴛ), which exceeds water's boiling point at atmospheric pressure, temperatures can be expressed in complement form for brevity, such as on surface temperature charts: the unit digit (in these cases, always ๠ or ๡), radix point, and unit symbol are omitted, and temperatures are expressed as simply two digits, with ໠๠ ≤ n &lt; ๡๠๠ implying unit digit ๠, and ๠ ≤ n &lt; ໠๠ implying unit digit ๡.</p>
-    <p>Converting between literal and complement form, which are two expressions of the same absolute scale, is trivial, requiring just omitting or restoring the unit digit. This contrasts to conversion between the Kelvin absolute scale and Celsius convenience scale, which requires adding or subtracting 273.15. For temperatures outside the range ๠.໠ ᴛ ≤ n &lt; ๡.໠ ᴛ, only literal form is used.</p>
+    <p>This definition, combined with ๡๠ as the numerical base, makes the thermab scale convenient for anthropic temperatures, eliminating the need for a separate convenience scale, as Celsius is needed for Kelvin.</p>
+    <p>For this unit, besides the usual way of writing a value with the unit symbol, a compact <i>symbol radix</i> notation uses the unit symbol as the radix point instead of using a dot. For example, instead of ๡.໠ ᴛ for one and a half thermabs, ๡ᴛ໠ is in symbol radix form. It's pronounced “one therm thirty”.</p>
+    <p>At 1 atm, carbon dioxide sublimes at ๠ᴛ໬໯, propane boils at ๠ᴛ໴໯, water melts near ๡ᴛ๠ (the melting vs. triple point difference is negligible), room temperature is ๡ᴛ๥, human body temperature is ๡ᴛ๨, and water boils at ๡ᴛ๶. Two fractional figures, e.g. ๡ᴛ๥๠, give finer precision than decidegrees Celsius, which is finer than necessary for everyday use, and exceeds the precision of common digital temperature sensors.</p>
+    <p>For temperatures between ๠ᴛ໠ (0.5 ᴛ), which is far below Earth's lowest recorded surface temperature, and ๡ᴛ໠ (1.5 ᴛ), which exceeds water's boiling point at atmospheric pressure, temperatures can be expressed in <i>unitless</i> form for further brevity, such as on surface temperature charts showing numerous values: the unit digit (in these cases, always ๠ or ๡), radix point, and unit symbol are omitted, and temperatures are expressed as simply two digits, with ໠๠ ≤ <i>n</i> &lt; ๡๠๠ implying unit digit ๠, and ๠ ≤ <i>n</i> &lt; ໠๠ implying unit digit ๡. In this form, carbon dioxide sublimes at ໬໯, propane boils at ໴໯, water melts near ๠๠, room temperature is ๥๠, human body temperature is ๨๠, and water boils at ๶๠. An increment of ๠๪ is between 1°F and 1°C, so that's the normal granularity for everyday use, and pronouncing temperatures in unitless form typically requires only 3 syllables, the same as Fahrenheit and Celsius do. When units are included, the thermab scale has the advantage.</p>
+    <p>Converting between full (standard or symbol radix) form and unitless form, which are two expressions of the same absolute scale, is trivial, requiring just omitting or restoring the unit digit. (For temperatures outside the range ๠ᴛ໠ ≤ <i>n</i> &lt; ๡ᴛ໠, only full form is used.) This contrasts to conversion between Kelvin and Celsius, which requires adding or subtracting 273.15. SI's flaw in this case is exposing to the user interface a factor that should instead be part of the Boltzmann constant's numerical value.</p>
 
+    <h4>Amount of substance</h4>
+    <p>The <i>mel</i> is the unit of amount of substance. <b>dr/mel = g/mol</b> exactly, where dr = st/๡๠๠ and g = kg/1000.</p>
+    <p>Hexmet's mel differs from SI's mole simply to compensate for the two systems' different mass units.</p>
+
+
+    <h3>A metric system</h3>
+    <p>In the same way that SI is metric using the decimal numeral system, Hexmet is metric using hexal.</p>
+
+    <p>When exscalars are not suffixed to numerals, but instead prefixed to unit symbols, they serve as metric prefixes, analogous to SI prefixes k, M, G, m, μ, n. The same affinity and typographic spacing rules apply as for SI. For example, in SI:<br>
+      1000 m = 1E3 m = 1 km<br>
+      25 km² = (5 × 10<sup>3</sup> m)² = 25 × 10<sup>6</sup> m²<br>
+      <br>
+      Likewise, in Hexmet:<br>
+      ๡๠๠ ᴘ = ๡࿸ ᴘ = ๡ ࿸ᴘ<br>
+      ๹ ࿸ᴘ<sup>๢</sup> = (๥࿸ ᴘ)<sup>๢</sup> = ๹࿺·ᴘ<sup>๢</sup>
     </p>
+    <p>To prevent confusion, if a numeral has an exscalar, and a unit symbol with a dimensional exponent other than 1 follows, then the numeral and unit symbol must be separated by a multiplication dot, not just a space. For example, ๹࿺·ᴘ<sup>๢</sup> can't be written as ๹࿺ ᴘ<sup>๢</sup>, because the latter could easily be mistaken for ๹ ࿺ᴘ<sup>๢</sup>, which is a much larger (๹࿾·ᴘ<sup>๢</sup>) area.
 
+    <p>Analogous to the series of number names “hesh”, “dihesh”, etc, the positive metric prefix names are “hes”, “dihes”, etc. For example, ๡ ࿸J is one <i>dihesjoule</i>, which is one watt-hour.</p>
+    <p>Likewise, ๡ ࿸s is one <i>dihesec</i> (the trailing “ond” is truncated from “second” when a Hexmet prefix is applied), which is one hour.</p>
+    <p>For distance, ๡ ࿸ᴘ, i.e. one <i>dihesp</i> (the trailing “on” is truncated from “pon” when a Hexmet prefix is applied), is the main city-scale unit of distance; it's between one kilometer and one mile.</p>
 
-<h4>A metric system</h4>
-  <p>In the same way that SI is metric when using the decimal numeral system, Hexmet is metric when using hexal.</p>
+    <p>The negative metric prefix names are: lus (rhymes with “bus”), dilus, trilus, tetrul, pentul, hexul, heptul, octul, ennul, decul, hendecul, dodecul, tridecul, tetradecul, pendecul, hexadecul, heptadecul, octodecul, enneadecul, icosul. For example:</p>
+    <ul>
+      <li>๡ ๿ᴘ is one <i>lusp</i> (with the trailing “on” truncated from “pon”), and is very nearly ¼ inch</li>
+      <li>๡ ๿st is one <i>lustone</i>, and is very nearly ¼ pound</li>
+    </ul>
 
-  <p>When hexal exponent characters are not suffixed to numerals, but instead prefixed to unit symbols, they serve as metric prefixes, analogous to SI prefixes k, M, G, m, μ, n. The same typographic spacing rules apply as for SI. For example, in SI:<br>
-1000 m = 1e3 m = 1 km<br><br>
-Likewise, in Hexmet:<br>
-  ๡๠๠ ᴘ = ๡࿸ ᴘ = ๡ ࿸ᴘ</p>
+    <p>The metric prefixes exceed the SI range; SI's largest, quetta (E30), is smaller than heptadeces (໾๱), and SI's smallest, quecto (E-30), is larger than heptadecul (๾๱). The prefixes are sufficient for all practical purposes; even the Planck length is about fifteen icosulp (๯ ๾๴ᴘ).</p>
 
-    <p>Analogous to the series of number names “hesh”, “dihesh”, etc, the positive metric prefix names are “hes”, “dihes”, etc. For example, ๡ ࿸J is one dihesjoule, which is one watt-hour.</p>
-      <p>Likewise, ๡ ࿸s is one dihesec (the trailing “ond” is truncated from “second” when a Hexmet prefix is applied), which is one hour.</p>
-      <p>For distance, ๡ ࿸ᴘ is one dihesp (the trailing “on” is truncated from “pon” when a Hexmet prefix is applied). The dihesp is the common city-scale unit of distance; it's between one kilometer and one mile.</p>
-    <p>Only the second and pon have their trailing letters truncated when a prefix as applied, due to the frequent use of these units. No other unit names are truncated when prefixed.</p>
+    <p>Only “second” and “pon” have their trailing letters truncated when a prefix as applied, due to the frequent use of these units. When the trailing letters are truncated, the resultant words are both singular and plural, as “pon” itself is. No other unit names are truncated when prefixed.</p>
 
-    <p>The negative metric prefix names are: lus, dilus, trilus, tetrul, pentul, hexul, heptul, octul, ennul, decul, hendecul, dodecul, tridecul, tetradecul, pendecul, hexadecul, heptadecul, octodecul, enneadecul, icosul.</p> For example, one ๡ ๿ᴘ is one lusp (with the trailing “on” truncated from “pon”), and is about 1/4 inch.
+    <p>For area, the <i>square hesp</i> (໿ᴘ²) is the main unit for land. It's about 535 m², which is between the meter-based <i>are</i> and <i>decare</i>, used in some places for land.</p>
 
-<h4>Hexmet features</h4>
-<p>Hexmet shares the two main advantages of SI: it's a metric system, meaning all the units are scaled just by shifting the radix point, and it's a coherent system, in the technical sense (the factor relating all the units is 1).</p>
+    <p>Secondary names are given to some units and metric magnitudes of them. Metric prefixes aren't used with secondary names themselves, except pedagogically, as below.</p>
+    <p>For volume, the <i>medimnos</i> (mn) is a cubic pon (ᴘ³). It's within the range of historical values; hence the name given to Hexmet's unit. Modern names are given to smaller magnitudes:</p>
+    <ul>
+      <li>The <i>quart</i> (qt) is a lusmedimnos (๿mn). It's very nearly equal to an American quart.</li>
+      <li>The <i>spoon</i> (sp) is a dilusmedimnos (࿰mn). It's near an American tablespoon and a cubic inch.</li>
+      <li>The <i>drop</i> (dp) is a trilusmedimnos (࿱mn) and a cubic lusp (๿ᴘ³).</li>
+    </ul>
+    <p>For small masses, the <i>dram</i> (dr), which rhymes with “bomb”, is a dilustone (࿰st). It's near an avoirdupois dram. 1 dr ≈ 1.87 g.</p>
+    <p>The lustone (๿st) has no secondary name, but it does have a secondary symbol: š
+    <p>For small temperatures, the <i>thermgrad</i> (ᴛg) is a dilusthermab (࿰ᴛ). 1 ᴛg ≈ 76 mK.</p>
 
-    <p>Hexmet's unit of length, the pon, shares the main advantage of the imperial foot: divisibility by 3 using standard smaller units. Decimal, SI's native radix, coerces engieers to avoid thirds, in the same way that binary would coerce engineers to avoid fifths. Often, halves or quarters are appropriate substitutes, but sometimes thirds are ideal, and SI discourages them. All these systems do fail for sevenths and beyond, but fortunately those higher prime factors are much less often needed.</p>
-<p></p>
+    <h4>Angles</h4>
+    <p>The <i>cyl</i> (pronounced “sil”; rhymes with “fill”), more commonly known as the <i>turn</i> (tr), is the unit of angle. It's equal to one full circle. Degrees are customarily used with decimal due to the latter's indivisibility by 3; e.g. 90° can be expressed as 0.25 cyl, but the decimal expression of 120° doesn't terminate. Hexal doesn't have that problem; those values are ๠.๯ cyl and ๠.๴ cyl, respectively. Therefore, unlike SI, which must use a non-metric unit of angle for rational division of a circle (degrees are technically only “accepted for use” SI, but SI has no metric alternative), Hexmet simply uses the cyl, with arbitrary subdivision in radix form. Both systems use the radian for natural angles, of course.</p>
+    <p>Like the thermab, the cyl can be used in symbol radix form, except that the symbol in this case changes to the same superscript ring used for the degree symbol, and ambiguity is prevented by requiring at least one digit after the radix point (since degree notation uses the symbol only as a suffix, never as infix). Because angles are usually less than one full circle, and the unit digit is zero in this case, symbol radix form for the cyl can be further shortened by omitting the unit digit when it's zero, and there's no ambiguity because degree notation never uses the symbol as a prefix. For example,<br>
+      120° = ๠.๴ cyl = ๠°๴ = °๴ (the latter two are pronounced “nil cyl twenty” and “cyl twenty”)<br>
+      360° = ๡ cyl = ๡°๠<br>
+    </p>
+    <p>The <i>cylgrad</i> (cgr) is a diluscyl (࿰cyl). This also equals a decidegree. For example,<br>
+      45° = ๠°๧໠ = °๧໠ = ๧໠ cgr<br>
+      57.3° = ๠°๩໣ = °๩໣ = ๩໣ cgr</p>
+
+    <h4>Geographic coordinates</h4>
+    <p>Latitude and longitude are expressed in cyl in symbol radix form, with the respective origins being the south pole and the prime meridian. No north/south/east/west designations are needed. Latitudes range from 0 ≤ <i>n</i> ≤ ½ (with the equator at ¼), and longitudes range from 0 ≤ <i>n</i> &lt; 1 (with the international date line at ½). A positive numerical change in latitude is northward in both the southern and northern hemisphere, and a positive numerical change in longitude (except when crossing the prime meridian) is eastward in both the eastern and western hemisphere.</p>
+    <p>Because the unit digit is always zero, it and the radix point are always omitted when writing latitudes and longitudes. Latitude and longitude in coordinate pairs also omit the unit symbols, and are separated by an underscore. Examples:</p>
+    <table>
+      <tr><th>Location</th><th>Hexmet notation</th><th>Traditional notation</th></tr>
+      <tr><td>Equator and prime meridian</td><td>๯_๠</td><td>0° N 0° E</td></tr>
+      <tr><td>London</td><td>๷໥๠_໽໼໴</td><td>51° 30′ N 0° 7′ W</td></tr>
+      <tr><td>Kyiv</td><td>๷๸໠_๥๥๪</td><td>50° 27′ N 30° 31′ E</td></tr>
+      <tr><td>Santiago</td><td>๩๹໠_໲๭๴</td><td>33° 27′ S 70° 40′ W</td></tr>
+    </table>
+    <p>Three digits for each coordinate gives precision to 8 hesp (600 feet), four digits to 8 pon (10 feet), five digits to 8 lusp (2 inches), and six digits to 8 dilusp (less than 1 mm).</p>
+    <p>Hemispheres are still immediately clear: the first digit of a latitude is less than ๯ for the southern hemisphere, and greater for the northern; the first digit of a longitude is less than ໠ for the eastern hemisphere, and greater for the western.</p>
+    <p>A latitude written by itself is prefixed with P (for <i>parallel</i>), since there's no north/south designator that would identify it as a latitude. For example, the south pole is at P°๠, the equator at P°๯, and the north pole at P°໠. A longitude is likewise prefixed with M (for <i>meridian</i>); e.g. the prime meridian is at M°๠ and the international date line is at M°໠.</p>
+
+    <h4>Hexmet features shared with imperial and SI</h4>
+    <p>Hexmet (except the auxiliary units) shares the two main advantages of SI: it's a metric system, meaning all the units are scaled just by shifting the radix point, and it's a coherent system, in the technical sense (the factor relating all the unscaled units is 1).</p>
+
+    <p>Hexmet's units all share the main advantage of some traditional units such as the foot: divisibility by 3 using standard smaller units. Since Hexmet's native radix is 60, the length unit can be divided into 10 parts, as most of the world claims to prefer, or 12 parts, as Americans prefer, and as the rest of the world would prefer if they hadn't been Stockholm syndromed into decimal units since grade school. Decimal, SI's native radix, coerces engineers to avoid thirds, in the same way that binary or dozenal would coerce engineers to avoid fifths. Often, halves or quarters are appropriate substitutes for thirds, but sometimes thirds are ideal, and SI discourages them. Binary, decimal, dozenal, and hexal do all fail for sevenths and beyond, but fortunately those higher prime factors are much less often needed.</p>
+
+    <p>The lusp, the next magnitude smaller than the pon, is very nearly ¼ inch, within the tolerance for carpentry, and within the tolerance for the standard ¼ inch drive used for small wrenches and sockets in both America and SI countries. This is because of a fortunate historical coincidence: with base ๡๠, ¼ inch happens to be very nearly a metric magnitude of the light-second.</p>
+
     <h4>Advantages over both imperial and SI</h4>
 
-    <p>Seconds, minutes, and hours are simply metrically scaled magnitudes of one another, due hexal being Hexmet's native radix.</p>
+    <p>Seconds, minutes, and hours are simply metrically scaled magnitudes of one another, due to ๡๠ being Hexmet's native radix.</p>
 
-    <p>Using the pon, which is between a foot and a meter, and using Hexmet's standard long distance, the dihesp, which is between a kilometer and a mile, the speed unit for long distance and long time is the same as for short distance and short time. Unlike the need to convert ft/s, ft/min, and mi/hr or nmi/hr (knots), or convert m/s and km/hr, the Hexmet unit <i>pel</i> means both pon per second and dihesp per hour, as well as hesp per minute. Scaled units, e.g. pon per hour, are just radix point shifts of pel.</p>
+    <p>The pon is not only a mere radix point shift from the light-second, making it more convenient for engineering use than either the foot or meter; it also happens to be a more handy anthropic unit than either the foot or the meter. The ancient Greeks already named and used it.</p>
 
-<p>The pon is not only a mere radix point shift from the light-second, making it more convenient for engineering use than either the foot or meter, it also happens to be a more handy anthropocentric unit than either the foot or the meter, so much so that the ancient Greeks already named and used it, coincidentally to an accuracy better than one part per thousand, despite knowing nothing about light speed.</p>
+    <p>The Hexmet speed unit <i>pel</i> means both pon per second and dihesp per hour, as well as hesp per minute. No conversion is required, unlike the case for ft/s vs. mi/hr or nmi/hr (knots), or m/s vs. km/hr. Even when scaled units are occasionally needed, e.g. pon per hour, they're just radix point shifts of the pel.<br>
+      One pel is between 1 km/hr and 1 mi/hr.</p>
 
-    <p>The lusp, the next magnitude smaller than the pon, happens to be almost exactly 1/4 inch, within the tolerance for carpentry, and within the tolerance for the standard 1/4 inch drive used for small wrenches and sockets in both America and SI metric countries. This is because with base hexal, 1/4 inch happens to be almost exactly a metric magnitude of the light-second.</p>
+    <p>The absolute temperature unit is practical for everyday use.</p>
 
-<p>Decimal and SI, of course, have two overwhelming advantages: billions of people already know them, and countless records already use them. Because of this, Hexmet is designed to complement, not replace, decimal and SI. Hexal keeps both of decimal's prime factors, and just adds a third, and Hexmet keeps many of SI's units:</br>
-second, ampere and coulomb, candela and lumen, joule and watt, volt, ohm, farad, henry, weber, and of course radian and steradian.</p>
+    <p>Other convenient round numbers, besides the exact definition <i>c</i> = ๡ ࿻pel:</p>
+    <ul>
+      <li>1 mach at 1 atm at ๡ᴛ๦ (≈ 27°C) is ๯๠ pel</li>
+      <li>Earth's rotation speed at the equator is ๴๠ pel</li>
+      <li>The approximation <i>c</i>/mach ≈ ๤࿹ is closer than <i>c</i>/mach ≈ 1E6</li>
+      <li>Earth's circumference is ๨ ࿺ᴘ</li>
+      <li>The mesopause is at ๡ ࿹ᴘ</li>
+    </ul>
 
-</body>
+    <h4>A complementary system</h4>
+
+    <p>Decimal and SI, of course, have two overwhelming advantages: billions of people, more than ๪࿻, already know them, and countless records already use them. Because of this, Hexmet is designed to complement SI, not replace it. Hexal has both of decimal's prime factors, just adding a third, and Hexmet keeps many of SI's units:</p>
+    <p>Second, hertz and becquerel, ampere and coulomb, candela and lumen, joule and watt, volt, ohm and siemens, farad, henry, weber, and of course radian and steradian. Hexmet's unit of torque, the pon-yeon (ᴘ×ʏ), is also equal to SI's newton-meter.</p>
+    <p>SI's named units that have Hexmet alternatives:</p>
+    <table>
+      <tr><th>Quantity</th><th>SI unit</th><th>Hexmet unit</th><th>Symbol</th><th>Equivalent</th><th>Conversion</th></tr>
+      <tr><th colspan="6"><span style="font-size:smaller;">base units</span></th></tr>
+      <tr><td>length</td><td>meter</td><td>pon</td><td>ᴘ</td><td style="border:none;"></td><td>๡ ᴘ = ๠.๷๧໹ ໪໼ m</td></tr>
+      <tr><td>mass</td><td>kilogram</td><td>stone</td><td>st</td><td style="border:none;"></td><td>๡ st ≈ ๦.໭໩໼ ๫໤ kg</td></tr>
+      <tr><td>absolute temperature</td><td>kelvin</td><td>thermab</td><td>ᴛ</td><td style="border:none;"></td><td>๡ ᴛ = ๤໣.๩໦ K</td></tr>
+      <tr><td>amount of substance</td><td>mole</td><td>mel</td><td>mel</td><td style="border:none;"></td><td>๡ mel ≈ ๡.໶๧໰ ๩໷ mol</td></tr>
+      <tr><th colspan="6"><span style="font-size:smaller;">derived units</span></th></tr>
+      <tr><td>force</td><td>newton</td><td>yeon<sup>†</sup></td><td>ʏ</td><td>st·ᴘ/s²</td><td>๡ ʏ ≈ ๢.໥໧໩ ໥๽ N</td></tr>
+      <tr><td>pressure</td><td>pascal</td><td>pres</td><td>pr</td><td>ʏ/ᴘ²</td><td>๡ pr ≈ ๱.๻๡໧ ๴๼ Pa</td></tr>
+      <tr><td>magnetic flux density</td><td>tesla</td><td>tes</td><td>Te</td><td>Wb/ᴘ²</td><td>๡ Te ≈ ๦.໭໩໼ ๫໤ T</td></tr>
+      <tr><td>relative temperature</td><td>degree Celsius</td><td>ᴺ/ᴀ<sup>‡</sup></td></tr>
+      <tr><td>illuminance</td><td>lux</td><td>ilum</td><td>il</td><td>lm/ᴘ²</td><td>๡ il ≈ ๦.໭໩໼ ๫໤ lx</td></tr>
+      <tr><td>ionizing radiation absorbed dose</td><td>gray</td><td>irad</td><td>ir</td><td>J/st</td><td>๡ ir ≈ ๠.๨໹๥໮๯໬ Gy</td></tr>
+      <tr><td>ionizing radiation equivalent dose</td><td>sievert</td><td>doseq</td><td>dq</td><td>J/st</td><td>๡ dq ≈ ๠.๨໹๥໮๯໬ Sv</td></tr>
+      <tr><td>catalytic activity</td><td>katal</td><td>kel</td><td>kel</td><td>mel/s</td><td>๡ kel ≈ ๡.໶๧໰ ๩໷ kat</td></tr>
+    </table>
+    <p>† <span style="font-size:smaller;">one syllable; rhymes with “sun”</span><br>
+      ‡ <span style="font-size:smaller;">absolute scale used instead</span></p>
+
+    <p>The alternative derived units are necessary in order for Hexmet to be a coherent system.</p>
+    <p>Even if it were possible for hexal and Hexmet to entirely displace all other radixes and measurement systems, it would not be desirable. Monoradixism and monometricism cause the same sort of mental damage that monolingualism does. Just as being a decently educated person requires knowing more than just one's own native language, so also it requires familiarity with more than one radix and more than one system of measurement. In this regard, the American mixture of systems is an advantage, though the particular SI complement commonly used has the disadvantages of being neither metric nor coherent.</p>
+
+    <h4>Auxiliary units</h4>
+    <p>One <i>fathom</i> (fh) is equal to five pon; this is a <i>semimetric</i> unit, i.e. its ratio to the coherent unit is not a power of the radix, but only a divisor of the radix. It's within the range of old British and ancient Greek values, and is handy in seafaring, as well as other applications of measuring lengths using outstretched arms. One fathom is near two meters.</p>
+    <p>One <i>bargrad</i> (bg) is equal to ⁸⁄₅ pr. This unit is non-metric relative to the pres, but metric relative to atmospheric pressure. ๡๠๠ bg is between 100 kPa (the SI metric approximation of 1 atm) and 101.325 kPa (1 atm).</p>
+    <p>One <i>grav</i> (gv; rhymes with “have”) = 0.999 839 5 kg·qt/L<br>
+      = 0.999 839 5 × ๠.๨໹๥ ໮๯໬ ๦๲๰ ๤ st · ((࿳<i>c</i>·s)³/๡๠)/((<i>c</i>·s/299 792 458)³/1000)<br>
+      = 999.839 5 × ๠.๠๨໹ ๥໮๯ ໬๦๲ ๰๤ · (๡࿳·299 792 458)³ st ≈ 0.141 94 st ≈ 0.954 93 kg<br>
+      This is the mass of one quart of water at maximum density at 1 atm. It's analogous (and close) to the original <i>grave</i>, the name of which was abandoned in 1795 when the kilogram was standardized. Water's density being 1 gv/qt is accurate within the current limits of measurement, unlike 1 kg/L, which has an error of 1.605 E-4 due accuracy limitations before the kilogram was standardized.</p>
+
+    <h3>Disadvantages</h3>
+    <span style="font-size:smaller;"><i>All values below are at 1 atm</i></span><br>
+    <p>Due to the standard unit of mass being defined as necessary to keep SI's energy and electrical units coherent with the pon, Hexmet lacks SI's convenient value (almost exactly 1 kg/L) for the max density of water. Instead, it's approximately ¹⁄₇ st/qt, with Hexmet having a flawed numerical value for the Planck constant just as SI has for the Boltzmann constant. This design decision is Hexmet's primary disadvantage. But this does provide a small integer for the average of ice and boiling water:</p>
+    <ul>
+      <li>๧.໲໨໧໢໬ š/qt — density of ice at the freezing point</li>
+      <li>๧.໻๳໸໢๠ š/qt — max density of ice</li>
+      <li>๨.๩໹໰๩໽ š/qt — density of water at the boiling point; <b>less than 3% greater</b> than ice max</li>
+      <li>๨ š/qt — <b>between</b> the two preceding (less than 1% greater than ice max), and a practical approximation for both.<br>
+	This is also the average, accurate to better than two parts per thousand, of the densities of ice at the freezing point and water at the boiling point.</li>
+    </ul>
+
+    <p>However, ๨ š/qt is about 6% less than water's max density (๨.໡ š/qt is accurate to better than 40 ppm). And a density of 1 is still more convenient than 8.</p>
+    <p>To compensate, a non-metric unit of mass is used when unitary water density is needed: the grav. The benefit of retaining SI's energy and electrical units outweighs the benefit of having water's density be 1 using the coherent mass unit; otherwise, the former units would be replaced, Hexmet's stone would be discarded, the grav would be the coherent mass unit, the yeon, pres, tes, irad, and doseq would be defined relative to it, and the mel would be modified accordingly.</p>
+    <p>With the stone, Hexmet does have some unitary densities that are less useful than water. Neodymium (atomic number ๡๠) is very nearly ๡ st/qt. Zinc (atomic number ໠), chromium, tin, and grey iron are also near ๡.</p>
+
+    <p>Hexmet also lacks several other SI metric approximations:</p>
+    <ul>
+      <li>100 kPa for atmospheric pressure. In Hexmet, it's ๡໦๠ pr. (This would be a different value using the grav instead of stone, but still not metric.) Because of this, the bargrad is used instead. ๡๠๠ bg has the advantages of being an even closer approximation of 1 atm than 1000 hPa is, and providing even finer integer precision (3600 divisions of 1 atm vs. only 1000), but the disadvantage of the ⁸⁄₅ factor relative to the coherent unit (the pres).</li>
+      <li>10 m of water depth per atm (most useful for minimizing mental burden for narced divers). In Hexmet, it's ๺ ᴘ per atm. The approximation 5 fh is most practical, but this is still only semimetric, not metric.</li>
+      <li>10 m/s² for terrestrial gravitational acceleration (most useful because a mass of <i>m</i> kg weighs 10<i>m</i> N). Instead, it's ๹ ᴘ/s².</li>
+    </ul>
+
+    <h3>Summary</h3>
+
+    <table>
+      <tr><th>SI advantages</th><th>Hexmet advantages</th></tr>
+      <tr><td>
+	  <ul>
+	    <li>Thoroughly entrenched</li>
+	    <li>Water density is almost exactly metric</li>
+	    <li>1 atm is very nearly metric</li>
+	    <li>water depth / atm is nearly metric</li>
+	    <li>terrestrial gravity is nearly metric</li>
+	  </ul>
+	</td>
+
+	<td>
+	  <ul>
+	    <li>Divisibility by 3</li>
+	    <li>Metric angles</li>
+	    <li>Metric hour/minute/second</li>
+	    <li>Metric geographic coordinates</li>
+	    <li>1 ࿸ᴘ/hr = 1 ໿ᴘ/min = 1 ᴘ/s = 1 pel</li>
+	    <li>The pel is metric to light speed</li>
+	    <li>The pon is metric to the light-second</li>
+	    <li>The pon is anthropic</li>
+	    <li>¼ inch (used even in SI countries) is practically metric</li>
+	    <li>The absolute temperature scale is practical for everyday use</li>
+	    <li>Water's triple point absolute temperature is metric</li>
+	  </ul>
+	</td>
+      </tr>
+    </table>
+
+  </body>
 </html>
