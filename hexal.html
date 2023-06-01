@@ -180,7 +180,7 @@
     <p>The <i>thermab</i> is the unit of temperature. The “ab” in the name is pronounced as the first syllable of “absolute”.
     <p><b>1 ᴛ = 273.16 K</b> exactly. Both are absolute temperature scales, with zero being absolute zero; however, where SI defines the kelvin such that water's triple point temperature is 273.16 K (within the current limits of measurement), Hexmet defines the thermab such that water's triple point temperature is ๡ ᴛ, i.e. 1 ᴛ.</p>
     <p>This definition, combined with ๡๠ as the numerical base, makes the thermab scale convenient for anthropic temperatures, eliminating the need for a separate convenience scale, as Celsius is needed for Kelvin.</p>
-    <p>For this unit, besides the usual way of writing a value with the unit symbol, a compact <i>symbol radix</i> notation uses the unit symbol as the radix point instead of using a dot. For example, instead of ๡.໠ ᴛ for one and a half thermabs, ๡ᴛ໠ is in symbol radix form. It's spoken as “one therm thirty”, with no ambiguity with the <i>therm</i> unit of energy because the latter isn't used in infix form.</p>
+    <p>For this unit, besides the usual way of writing a value with the unit symbol, a compact <i>symbol radix</i> notation uses the unit symbol as the radix point instead of using a dot. For example, instead of ๡.໠ ᴛ for one and a half thermabs, ๡ᴛ໠ is in symbol radix form. It's spoken as “one therm thirty”, with no ambiguity with the <i>therm</i> unit of energy (100 kBTU) because the latter isn't used in infix form.</p>
     <p>At 1 atm, carbon dioxide sublimes at ๠ᴛ໬໯, propane boils at ๠ᴛ໴໯, ice melts near ๡ᴛ๠ (the melting vs. triple point difference is ordinarily negligible), room temperature is ๡ᴛ๥, human body temperature is ๡ᴛ๨, and water boils at ๡ᴛ๶. Two fractional figures, e.g. ๡ᴛ๥๠, give finer precision than decidegrees Celsius, which is finer than necessary for everyday use, and exceeds the precision of common digital temperature sensors.</p>
     <p>For temperatures between ๠ᴛ໠ (0.5 ᴛ), which is far below Earth's lowest recorded surface temperature, and ๡ᴛ໠ (1.5 ᴛ), which exceeds water's boiling point at atmospheric pressure, temperatures can be expressed in <i>unitless</i> form for further brevity, such as on surface temperature charts showing numerous values: the unit digit (in these cases, always ๠ or ๡), radix point, and unit symbol are omitted, and temperatures are expressed as simply two digits, with ໠๠ ≤ <i>n</i> &lt; ๡๠๠ implying unit digit ๠, and ๠ ≤ <i>n</i> &lt; ໠๠ implying unit digit ๡. In this form, carbon dioxide sublimes at ໬໯, propane boils at ໴໯, ice melts near ๠๠, room temperature is ๥๠, human body temperature is ๨๠, and water boils at ๶๠. An increment of ๠๪ is between 1°F and 1°C, so that's the normal granularity for everyday use, and pronouncing temperatures in unitless form typically requires only 3 syllables, the same as Fahrenheit and Celsius do. When units are included, the thermab scale has the verbal brevity advantage.</p>
     <p>Converting between full (standard or symbol radix) form and unitless form, which are two expressions of the same absolute scale, is trivial, requiring just omitting or restoring the unit digit. (For temperatures outside the range ๠ᴛ໠ ≤ <i>n</i> &lt; ๡ᴛ໠, only full form is used.) This contrasts to conversion between Kelvin and Celsius, which requires adding or subtracting 273.15. SI's flaw in this case is exposing to the user interface a factor that should instead be part of the Boltzmann constant's numerical value.</p>
@@ -195,7 +195,7 @@
 
     <p>When exscalars are not suffixed to numerals, but instead prefixed to unit symbols, they serve as metric prefixes, analogous to SI prefixes k, M, G, m, μ, n. The same affinity and typographic spacing rules apply as for SI. For example, in SI:<br>
       1000 m = 1E3 m = 1 km<br>
-      25 km² = (5 × 10<sup>3</sup> m)² = 25 × 10<sup>6</sup> m²<br>
+      25 km<sup>2</sup> = (5 × 10<sup>3</sup> m)<sup>2</sup> = 25 × 10<sup>6</sup> m<sup>2</sup><br>
       <br>
       Likewise, in Hexmet:<br>
       ๡๠๠ ᴘ = ๡࿸ ᴘ = ๡ ࿸ᴘ<br>
@@ -272,18 +272,18 @@
 
     <p>The absolute temperature unit is practical for everyday use.</p>
 
-    <p>Other convenient round numbers, besides the exact definition <i>c</i> = ๡ ࿻pel:</p>
+    <p>Other approximate round numbers, besides the exact definition <i>c</i> = ๡ ࿻pel:</p>
     <ul>
       <li>1 mach at 1 atm at ๡ᴛ๦ (≈ 27°C) is ๯๠ pel</li>
       <li>Earth's rotation speed at the equator is ๴๠ pel</li>
-      <li>The approximation <i>c</i>/mach ≈ ๤࿹ is closer than <i>c</i>/mach ≈ 1E6</li>
+      <li><i>c</i>/mach ≈ ๤࿹ is closer than <i>c</i>/mach ≈ 1E6</li>
       <li>Earth's circumference is ๨ ࿺ᴘ</li>
       <li>The mesopause is at ๡ ࿹ᴘ</li>
     </ul>
 
     <h4>A complementary system</h4>
 
-    <p>Decimal and SI, of course, have two overwhelming advantages: billions of people, more than ๪࿻, already know them, and countless records already use them. Because of this, Hexmet is designed to complement SI, not replace it. Hexal has both of decimal's prime factors, just adding a third, and Hexmet keeps many of SI's units:</p>
+    <p>Decimal and SI, of course, have two overwhelming advantages: billions of people, about ๪࿻, already know them, and countless records already use them. Because of this, Hexmet is designed to complement SI, not replace it. Hexal has both of decimal's prime factors, just adding a third, and Hexmet keeps many of SI's units:</p>
     <p>Second, hertz and becquerel, ampere and coulomb, candela and lumen, joule and watt, volt, ohm and siemens, farad, henry, weber, and of course radian and steradian. Hexmet's unit of torque, the pon-yeon (ᴘ×ʏ), is also equal to SI's newton-meter.</p>
     <p>SI's named units that have Hexmet alternatives:</p>
     <table>
@@ -313,8 +313,10 @@
     <p>One <i>fathom</i> (fh) is equal to five pon; this is a <i>semimetric</i> unit, i.e. its ratio to the coherent unit is not a power of the radix, but only a divisor of the radix. It's within the range of old British and ancient Greek values, and is handy in seafaring, as well as other applications of measuring lengths using outstretched arms. One fathom is near two meters.</p>
     <p>One <i>bargrad</i> (bg) is equal to ⁸⁄₅ pr. This unit is non-metric relative to the pres, but metric relative to atmospheric pressure. ๡๠๠ bg is between 100 kPa (the SI metric approximation of 1 atm) and 101.325 kPa (1 atm).</p>
     <p>One <i>grav</i> (gv; rhymes with “have”) = 0.999 839 5 kg·qt/L<br>
-      = 0.999 839 5 × ๠.๨໹๥ ໮๯໬ ๦๲๰ ๤ st · ((࿳<i>c</i>·s)³/๡๠)/((<i>c</i>·s/299 792 458)³/1000)<br>
-      = 999.839 5 × ๠.๠๨໹ ๥໮๯ ໬๦๲ ๰๤ · (๡࿳·299 792 458)³ st ≈ 0.141 94 st ≈ 0.954 93 kg<br>
+      = 0.999 839 5 × (299 792 458/๡࿻)² st · ((࿳<i>c</i>·s)³/๡๠)/((<i>c</i>·s/299 792 458)³/1000)<br>
+      = 999.839 5 × (299 792 458/๡࿻)² st × (๡࿳·299 792 458)³/๡๠<br>
+      = 999.839 5 × (299 792 458)⁵ × ๡๾๺ st<br>
+      ≈ 0.141 94 st ≈ 0.954 93 kg<br>
       This is the mass of one quart of water at maximum density at 1 atm. It's analogous (and close) to the original <i>grave</i>, the name of which was abandoned in 1795 when the kilogram was standardized. Water's density being 1 gv/qt is accurate within the current limits of measurement, unlike 1 kg/L, which has an error of 1.605 E-4 due accuracy limitations before the kilogram was standardized.</p>
 
     <h3>Disadvantages</h3>
@@ -329,7 +331,7 @@
     </ul>
 
     <p>However, ๨ š/qt is about 6% less than water's max density (๨.໡ š/qt is accurate to better than 40 ppm). And a density of 1 is still more convenient than 8.</p>
-    <p>To compensate, a non-metric unit of mass is used when unitary water density is needed: the grav. The benefit of retaining SI's energy and electrical units outweighs the benefit of having water's density be 1 using the coherent mass unit; otherwise, the former units would be replaced, Hexmet's stone would be discarded, the grav would be the coherent mass unit, the yeon, pres, tes, irad, and doseq would be defined relative to it, and the mel would be modified accordingly.</p>
+    <p>To compensate, a non-metric unit of mass is used when unitary water density is needed: the grav. The benefit of retaining SI's energy and electrical units outweighs the benefit of having water's density be 1 using the coherent mass unit; otherwise, the former units would be replaced, the stone would be discarded, the grav would be the coherent mass unit, the yeon, pres, tes, irad, and doseq would be defined relative to it, and the mel would be modified accordingly.</p>
     <p>With the stone, Hexmet does have some unitary densities that are less useful than water. Neodymium (atomic number ๡๠) is very nearly ๡ st/qt. Zinc (atomic number ໠), chromium, tin, and grey iron are also near ๡.</p>
 
     <p>Hexmet also lacks several other SI metric approximations:</p>
